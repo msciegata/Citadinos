@@ -1,5 +1,28 @@
+body {
+	margin:0;
+	padding:0;
+}
+
 .container {
+	background-color:#D7D7CD;
+	margin:0;
+	padding:0;
+
+	button {
+		background-color:#000745;
+		padding:10px;
+		min-width: 200px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: white;
+		border:none;
+		cursor: pointer;
+	}
+
 	.noticias {
+		min-height: 680px;
+		margin:0 auto;
+
 		img {
 			width: 200px;
 			display: block;
@@ -11,8 +34,8 @@
     		font-size: 25px;
     		width: 355px;
 		    text-align: center;
-		    margin: 35px auto;
-		    padding: 20px;
+		    margin:0 auto;
+		    padding: 50px 0 30px;
 		}
 
 		p {
