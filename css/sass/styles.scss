@@ -1,0 +1,38 @@
+.container {
+	.noticias {
+		img {
+			width: 200px;
+			display: block;
+			margin: auto;
+		}
+
+		h1 {
+			font-family: arial;
+    		font-size: 25px;
+    		width: 355px;
+		    text-align: center;
+		    margin: 35px auto;
+		    padding: 20px;
+		}
+
+		p {
+			font-family: arial;
+    		font-size: 20px;
+    		width: 355px;
+		    text-align: center;
+		    margin: 35px auto;
+		    background-color: white;
+		    padding: 20px;
+		}
+
+		button {
+			display: block;
+			margin: auto;
+		}
+	}
+}
+
+
+
+
+

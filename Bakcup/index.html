@@ -1,0 +1,426 @@
+<HTML lang="es">
+  <HEAD>
+<TITLE>Citadinos, tu acceso a la ciudad</TITLE>
+<STYLE>
+	#principal * {
+		color: #000000;
+		font: normal 15px "Times New Roman", Times, serif;
+		text-decoration: none;
+	}
+	#principal p{
+		margin: 6px 0;
+	}
+	#principal a {
+		text-decoration: none;
+		color: #226C8E;
+	}
+	#principal .titulo {
+		margin-top: 0px;
+		color: #41545d;
+		font: 24px verdana;
+		font-family: impact;
+		text-decoration: none;
+		margin-bottom: 0px;
+	}
+	#principal .subtitulo {
+		padding:16px 0 6px 0;
+		color: #41545d;
+		font: 20px verdana;
+		font-family: impact;
+		text-decoration: none;
+	}
+	#contenido * {
+		margin: 0;
+		padding: 0;
+	}
+	#contenido p{
+		margin: 6px 0;
+	}
+	#contenido .newsbar {
+		background: #eeeee;
+	}
+	:root #contenido .newsbar {
+		float: left;
+		width: 30%;
+		margin: 7px;
+	}
+	#contenido .noticiatitulo img {
+		float: left;
+		padding: 0;
+		margin: 0 5px 15px 0;
+	}
+	#contenido .noticiatitulo {
+		width: 135px;
+		margin-right: 5px;
+		background: #ededed;
+	padding-right: 10px;
+	vertical-align: top;
+	display: inline-block;
+	}
+	#contenido .noticiatitulo a {
+		color: black;
+		font-weight: bold;
+		background: #ededed;
+	}
+	#contenido .noticiatitulo p {
+		font-weight: bold;
+		background: #ededed;
+	}
+	* html #contenido .noticiatitulo {
+		width: 138px;
+		display: inline;
+	}
+	:root #contenido .noticiatitulo {
+		float: left;
+		width: 128px;
+		display: inline;
+	}
+	#contenido .imagen {
+		width: 135px;
+		height: 119px;
+		padding: 0 5px;
+		margin-right: 5px;
+		background: #cccccc;
+		display: inline-block;
+	}
+	* html #contenido .imagen {
+		width: 138px;
+		display: inline;
+	}
+	:root #contenido .imagen {
+		float: left;
+		width: 128px;
+		display: block;
+		display: inline;
+	}
+	#contenido .noticia {
+		width: 135px;
+		margin-right: 5px;
+		background: #ededed;
+		vertical-align: top;
+		padding: 2px 5px 5px;
+		display: inline-block;
+	}
+	#contenido .noticia span {
+	}
+	* html #contenido .noticia {
+		width: 138px;
+		display: inline;
+	}
+	:root #contenido .noticia {
+		float: left;
+		width: 128px;
+		display: inline;
+	}
+	#contenido .titulo {
+		clear: left;
+		color: #41545d;
+		margin-top: 5px;
+		padding-top: 1em;
+		font: 24px verdana;
+		font-family: impact;
+		margin-bottom: 15px;
+		text-decoration: none;
+	}
+	#contenido .midwidth {
+		height: 1px;
+	}
+	#contenido .clear {
+		clear: left;
+	}
+
+	.menu-lat-li {
+		border-top: 1px dashed #797979; 
+		border-right: 1px dashed #797979;
+		padding: 5px 0px 3px 0px;
+	}
+
+	.sr-only {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+	}
+
+</STYLE>
+
+    <META charset="utf-8">
+    <SCRIPT type="text/javascript">
+	    function ChangeColor(id, colour){
+	       document.getElementById(id).style.backgroundColor=colour;
+	    }
+	    function switchImage(imgName, imgSrc){
+	       if (document.images){
+	         	if (imgSrc != "none"){
+	             	document.images[imgName].src = imgSrc;
+	         	}
+	       	}
+	    }
+    </SCRIPT> 
+    <NOSCRIPT><B><FONT COLOR=RED>Esta página usa scripts!!!</FONT></B></NOSCRIPT>
+
+  </HEAD>
+  <BODY TEXT=#000000 BGCOLOR=#D7D7CD LEFTMARGIN=0px TOPMARGIN=0px MARGINWIDTH=0px MARGINHEIGHT=0px LINK=#226C8E VLINK=#226C8E ALINK=#226C8E>
+
+	<TABLE WIDTH=100% BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=#D7D7CD>
+		<TR VALIGN=MIDDLE>
+			<TD WIDTH=100% ALIGN=CENTER>
+				<TABLE WIDTH=800px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=WHITE>
+					<TR HEIGHT=10px>
+						<TD WIDTH=10px BACKGROUND=./img/border_left_top.gif><IMG SRC=./img/border_left_top.gif WIDTH=10px HEIGHT=10px></TD>
+						<TD WIDTH=780px BACKGROUND=./img/border_top.gif><IMG SRC=./img/border_top.gif HEIGHT=10px></TD>
+						<TD WIDTH=10px BACKGROUND=./img/border_right_top.gif><IMG SRC=./img/border_right_top.gif WIDTH=10px HEIGHT=10px></TD>
+					</TR>
+					<TR>
+						<TD WIDTH=10px BACKGROUND=./img/border_left.gif><IMG SRC=./img/border_left.gif WIDTH=10px></TD>
+						<TD WIDTH=780px ALIGN=CENTER>
+							<TABLE WIDTH=780px HEIGHT=144px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=WHITE>
+								<TR HEIGHT=86px>
+									<TD WIDTH=443px BACKGROUND=./img/top_logo_next.gif VALIGN=MIDDLE>
+										<DIV>
+											<IMG BORDER=0 SRC=./img/top_logo.gif WIDTH=443px HEIGHT=86px ALT="Citadinos">
+										</DIV>
+									</TD>
+									<TD WIDTH=24px VALIGN=MIDDLE><IMG SRC=./img/top_logo_next_end.gif WIDTH=24px HEIGHT=86px></TD>
+									<TD WIDTH=128px VALIGN=MIDDLE><IMG SRC=./img/top_weather.gif WIDTH=128px HEIGHT=86px></TD>
+									<TD WIDTH=22px VALIGN=MIDDLE><IMG SRC=./img/top_logo_next_start.gif WIDTH=22px HEIGHT=86px></TD>
+									<TD WIDTH=163px BACKGROUND=./img/top_logo_next.gif ALIGN=CENTER VALIGN=MIDDLE>
+						                <label for="a-rapido" class="sr-only">Acceso rápido a servicios de la ciudad</label>
+						                <SELECT id="a-rapido" ONCHANGE="">
+											<OPTION value="1" aria-hidden="true">Acceso rápido</OPTION>
+											<OPTION value="2">Agua potable</OPTION>
+											<OPTION value="3">Arquitectura</OPTION>
+											<OPTION value="4">Asistencia social</OPTION>
+											<OPTION value="5">Atención médica</OPTION>
+											<OPTION value="6">Bibliotecas</OPTION>
+											<OPTION value="7">Bomberos</OPTION>
+											<OPTION value="8">Educación</OPTION>
+											<OPTION value="9">Electricidad</OPTION>
+											<OPTION value="10">Guarderías</OPTION>
+											<OPTION value="11">Policía</OPTION>
+											<OPTION value="12">Residuos</OPTION>
+											<OPTION value="13">Servicio de gas</OPTION>
+											<OPTION value="14">Telecomunicaciones</OPTION>
+											<OPTION value="15">Televisión</OPTION>
+											<OPTION value="16">Transportes</OPTION>
+										</SELECT>
+										<button type="button">Ir</button>
+									</TD>
+								</TR>
+								<TR HEIGHT=7px>
+									<TD WIDTH=780px BACKGROUND=./img/mark.gif COLSPAN=5><IMG SRC=./img/mark.gif WIDTH=158px HEIGHT=7px></TD>
+								</TR>
+								<TR HEIGHT=25px>
+									<TD COLSPAN=5>
+										<TABLE WIDTH=780px BORDER=0px CELLSPACING=0px CELLPADDING=0px>
+											<TR HEIGHT=25px>
+												<TD BGCOLOR="#EDEDED" WIDTH=380px><FONT COLOR=BLACK FACE=Verdana SIZE=2>&nbsp;&nbsp;<B>Tránsito:</B> Obras en la Avenida Central</FONT></TD>
+												<TD BGCOLOR="#FFFFFF" ALIGN=RIGHT ID="WEATHER"><FONT COLOR=BLACK FACE=Verdana SIZE=2><B>Hoy:</B>
+													<SCRIPT LANGUAGE="JavaScript">
+													var now = new Date();
+													var days = new Array('Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado');
+													var months = new Array('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+													var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+															function fourdigits(number)	{
+													return (number < 1000) ? number + 1900 : number;
+													}
+													today =  days[now.getDay()] + " " + date + " " + months[now.getMonth()] + " " + (fourdigits(now.getYear())) + ", Soleado, 23&deg;C&nbsp;&nbsp;</FONT>";
+													document.all.WEATHER.setAttribute("BGCOLOR", "#EDEDED", 0);
+													document.write(today);
+												</SCRIPT></TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+								<TR HEIGHT=1px>
+									<TD WIDTH=780px BACKGROUND=./img/marker2_w.gif COLSPAN=5><IMG SRC=.img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
+								</TR>
+								<TR HEIGHT=25px>
+									<TD COLSPAN=5>&nbsp;</TD>
+								</TR>
+							</TABLE>
+							<TABLE WIDTH=780px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=WHITE>
+								<TR WIDTH=780px>
+									<TD WIDTH=155px BGCOLOR=#E4E4E4 VALIGN=TOP>
+										<nav>
+											<ul width="155px" style="list-style-type: none; margin: 0px; padding: 0px; border-bottom: 1px dashed #797979; background-color: rgb(237, 237, 237);">
+												<li WIDTH=154px class="menu-lat-li" id="home" onMouseOver="switchImage('nav_home', './img/nav_home2.gif'); ChangeColor('home','#FFF')" onMouseOut="switchImage('nav_home', './img/nav_home.gif'); ChangeColor('home','#EDEDED')"><A HREF="javascript:location.href='index.html';" style="outline: none;"><img alt="Inicio" name="nav_home" src=./img/nav_home.gif width=91 height=27 hspace="15" border=0px></a></li>
+												<li WIDTH=154px class="menu-lat-li" id="news" onMouseOver="switchImage('nav_news', './img/nav_news2.gif'); ChangeColor('news','#FFF')" onMouseOut="switchImage('nav_news', './img/nav_news.gif'); ChangeColor('news','#EDEDED')"><A HREF="javascript:location.href='noticias.html';" style="outline: none;"><IMG SRC=./img/nav_news.gif alt="Noticias" name="nav_news" WIDTH=111 HEIGHT=21 hspace="12" BORDER=0px></A></li>
+												<li WIDTH=154px class="menu-lat-li" id="tickets" onMouseOver="switchImage('nav_facts', './img/nav_facts2.gif'); ChangeColor('tickets','#FFF')" onMouseOut="switchImage('nav_facts', './img/nav_facts.gif'); ChangeColor('tickets','#EDEDED')"><A HREF="javascript:location.href='entradas.html';" style="outline: none;"><IMG alt="Entradas" name="nav_facts" SRC=./img/nav_facts.gif WIDTH=116 HEIGHT=23 hspace="9" BORDER=0px></A></li>
+												<li WIDTH=154px class="menu-lat-li" id="survey" onMouseOver="switchImage('nav_survey', './img/nav_survey2.gif'); ChangeColor('survey','#FFF')" onMouseOut="switchImage('nav_survey', './img/nav_survey.gif'); ChangeColor('survey','#EDEDED')"><A HREF="javascript:location.href='encuesta.html';" style="outline: none;"><IMG SRC=./img/nav_survey.gif name="nav_survey" alt="Encuestas" WIDTH=122 HEIGHT=32 hspace="8" BORDER=0px></A></li>
+											</ul>
+										</vav>
+									</TD>
+									<TD WIDTH=20px><IMG SRC=./img/blank_5x5.gif WIDTH=20px HEIGHT=5px></TD>
+									<TD WIDTH=434px HEIGHT="600px" VALIGN=TOP id="principal">
+										<main>
+											<h1 class="titulo">Bienvenidos a Citadinos</h1>
+											<p>Citadinos es el nuevo portal para visitantes y residentes. Averigua qué hay, reserva entradas, y obten las ultimas noticias.</p>
+											<div id="contenido">
+												<h2 class="sr-only">Noticias</h2>
+												<div class="midwidth">
+													<div></div>
+												</div>
+												<div class="newsbar">
+													<div class="noticiatitulo">
+														<img src="./img/headline_middle.gif" width="23" height="24" align="absmiddle">
+														<a href="noticias.html">
+															<h3 style="font-weight: bold;">Ola de calor vinculada a temperaturas</h3>
+														</a>
+													</div>
+													<div class="imagen" style="background: url(./img/panda-sm.jpg) center center no-repeat #cccccc" alt="">
+														<div class="null"></div>
+													</div>
+													<div class="noticia">
+														<span>Luego de tres años de esfuerzo los científicos de la ciudad afirman que la principal causa de la ola de calor de 2003 fue nuestro exceso<a href="noticias.html"><img alt="Leer mas" src="./img/morearrow.gif" width="48" height="10" mas" border="0" onMouseOver="this.src='./img/morearrow_a.gif'" onMouseOut="this.src='./img/morearrow.gif'" style="vertical-align: bottom"></a>
+														</span>
+													</div>
+													<div class="clear">
+														<div class="null"></div>
+													</div>
+												</div>
+
+												<div class="newsbar">
+													<div class="noticiatitulo"><img src="./img/headline_middle.gif" width="23" height="24" align="absmiddle">
+														<a href="noticias.html">
+															<h3 style="font-weight: bold;">Pena de nueve meses en funda de violín</h3>
+														</a>
+													</div>
+													<div class="imagen" style="background: url(./img/oldenburgstudentviolin34.jpg) center center no-repeat #cccccc" alt="" >
+														<div class="null"></div>
+													</div>													
+													<div class="noticia">
+														<span>Intendente: estos crímenes necesitan castigos más creativos y efectivos. Por ejemplo, podríamos hacer obligatorio el uso de <a href="noticias.html"><img alt="Leer mas" src="./img/morearrow.gif" width="48" height="10" border="0" onMouseOver="this.src='./img/morearrow_a.gif'" onMouseOut="this.src='./img/morearrow.gif'" style="vertical-align: bottom"></a>
+														</span>
+													</div>
+													<div class="clear">
+														<div class="null"></div>
+													</div>
+												</div>
+
+												<div class="newsbar">													
+													<div class="noticiatitulo"><img src="./img/headline_middle.gif" width="23" height="24" align="absmiddle">
+														<a href="noticias.html">
+															<h3 style="font-weight: bold;">Falta de cerebros afecta investigación</h3>
+														</a>
+													</div>
+													<div class="imagen" style="background: url(./img/BrainInJar.jpg) center center no-repeat #cccccc;" alt="">
+														<div class="null"></div>
+													</div>
+													<div class="noticia">
+														<span>Donación de cerebros: gran caída en las donaciones luego del éxito de la campaña 'Tránsito Lento, Calles Seguras' que cambió <a href="noticias.html"><img alt="Leer mas" src="./img/morearrow.gif" width="48" height="10"  border="0" onMouseOver="this.src='./img/morearrow_a.gif'" onMouseOut="this.src='./img/morearrow.gif'" style="vertical-align: bottom"></a>
+														</span>
+													</div>
+													<div class="clear">
+														<div class="null"></div>
+													</div>
+												</div>
+												
+												<hr style="visibility:hidden; clear:both;">
+												<h2 class="subtitulo">Recorriendo la Red</h2>
+												<p>Por favor visite los siguientes sitios para información importante. Citadinos no se hace responsable por su contenido. Para consejos sobre alcauciles, llame al número de abajo. 
+												<div class="sr-only">telefono 1 23 45 67 89</div> 
+												<br/><br/>
+												<span>
+													<img src="./img/list_bullets.gif" alt="" border="0" align="absmiddle">
+													<a href="externo.html" target="_blank">Abejas asesinas</a>
+													<br>
+													<img src="./img/list_bullets.gif" alt="" border="0" align="absmiddle">
+													<a href="externo.html" target="_blank">Cebollas</a>.
+												</span>
+												<br/><br/>
+												<b>Línea de asistencia sobre alcauciles: </b><img src="./img/telefon_white_bg.gif" alt="telefono 1 23 45 67 89" border="0" align="absmiddle"></p>
+											</div>
+										</main>
+									</TD>
+									<TD WIDTH=20px><IMG SRC=./img/blank_5x5.gif WIDTH=20px HEIGHT=5px></TD>
+									<TD WIDTH=151px VALIGN=TOP>
+										<aside>
+											<h2 class="sr-only">Noticias adicionales</h2>
+											<TABLE WIDTH=151px BORDER=0px CELLSPACING=0px CELLPADDING=0px>
+												<TR HEIGHT=1px>
+													<TD WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=11 VALIGN=TOP><IMG SRC=./img/marker2_t.gif WIDTH=1px HEIGHT=30px></TD>
+													<TD WIDTH=151px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
+												</TR>
+												<TR HEIGHT=25px>
+													<TD WIDTH=150px BGCOLOR=#A9B8BF>
+														<h3 style="padding: opx; margin-top: 5px; margin-bottom: 5px;">
+															<FONT COLOR=#41545D FACE=Verdana SIZE=2>
+																&nbsp;<b>Redonditos</b>
+															</FONT>
+														</h3>
+													</TD>
+												</TR>
+												<TR HEIGHT=106px>
+													<TD WIDTH=150px><DIV><IMG SRC=./img/teaser_right1.jpg WIDTH=150px HEIGHT=106px alt=""></DIV></TD>
+												</TR>
+												<TR>
+													<TD WIDTH=150px>
+														<TABLE WIDTH=150px BORDER=0px CELLSPACING=0px CELLPADDING=3px>
+															<TR>
+																<TD>
+																	<DIV>Lema &quot;Redonditos&quot; en concierto a beneficio confunde a rockeros cuadrados.<BR><A HREF=entradas.html STYLE="text-decoration:none;"><span aria-hidden="true">Leer más...</span> <span class="sr-only">Leer mas sobre redonditos</span></A>
+																	</DIV>
+																</TD>
+															</TR>
+														</TABLE>
+													</TD>
+												</TR>
+												<TR HEIGHT=17px>
+													<TD>&nbsp;</TD>
+												</TR>
+												<TR HEIGHT=1px>
+													<TD WIDTH=150px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
+												</TR>
+												<TR HEIGHT=25px>
+													<TD WIDTH=150px BGCOLOR=#A9B8BF>
+														<h3 style="padding: opx; margin-top: 5px; margin-bottom: 5px;"> 
+															<FONT COLOR=#41545D FACE=Verdana SIZE=2>
+																&nbsp;<B>Espacios verdes</B>
+															</FONT>
+														</h3>
+													</TD>
+												</TR>
+												<TR HEIGHT=154px>
+													<TD WIDTH=150px><IMG SRC=./img/teaser_right2.jpg WIDTH=150px HEIGHT=154px alt=""></TD>
+												</TR>
+												<TR>
+													<TD WIDTH=150px>
+														<TABLE WIDTH=150px BORDER=0px CELLSPACING=0px CELLPADDING=3px>
+															<TR>
+																<TD>Más parques y más verde en la ciudad, y cada vez menos del preciado espacio para estacionar. ¿Cómo te afecta esto?<BR><A HREF=encuesta.html STYLE="text-decoration:none;"><span aria-hidden="true">Leer más...</span><span class="sr-only">Leer mas sobre espacios verdes</span></A></TD>
+															</TR>
+														</TABLE>
+													</TD>
+												</TR>
+											</TABLE>
+										</aside>
+									</TD>
+								</TR>
+							</TABLE>
+							<footer>
+								<TABLE WIDTH=780px HEIGHT=17px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=#EDEDED>		
+									<TR HEIGHT=17px>
+										<TD ALIGN=RIGHT><FONT COLOR=BLACK FACE=Verdana SIZE=1><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Derechos reservados</a> &copy; 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a>&reg;</FONT></TD>
+									</TR>						
+								</TABLE>
+							</footer>
+						</td>
+						<TD WIDTH=10px BACKGROUND=./img/border_right.gif><IMG SRC=./img/border_right.gif WIDTH=10px></TD>
+					</TR>
+					<TR HEIGHT=10px>
+						<TD WIDTH=10px HEIGHT=10px BACKGROUND=./img/border_bottom_left.gif><IMG SRC=./img/border_bottom_left.gif WIDTH=10px HEIGHT=10px></TD>
+						<TD WIDTH=780px HEIGHT=10px BACKGROUND=./img/border_bottom.gif><IMG SRC=./img/border_bottom.gif HEIGHT=10px></TD>
+						<TD WIDTH=10px HEIGHT=10px BACKGROUND=./img/border_bottom_right.gif><IMG SRC=./img/border_bottom_right.gif WIDTH=10px HEIGHT=10px></TD>
+					</TR>
+				</TABLE>
+			</TD>
+		</TR>
+	</TABLE>
+    
+  </body>
+</html>
