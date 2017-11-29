@@ -4,30 +4,211 @@ body {
   padding: 0; }
 
 /* line 6, sass/styles.scss */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute; }
+
+/* line 18, sass/styles.scss */
+.nav-menu li {
+  border-top: 1px dashed #797979;
+  border-right: 1px dashed #797979;
+  padding: 5px 0px 3px 0px; }
+
+/* line 25, sass/styles.scss */
 .container {
-  background-color: #D7D7CD;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-weight: normal;
+  color: #222222;
+  background-color: #d7d7cd;
   margin: 0;
   padding: 0; }
-  /* line 11, sass/styles.scss */
+  /* line 35, sass/styles.scss */
+  .container .title {
+    margin: 0px auto;
+    font-family: 'verdana';
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #17202A; }
+  /* line 44, sass/styles.scss */
+  .container .subtitle {
+    text-decoration: none;
+    color: #17202A;
+    font-family: 'verdana';
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0; }
+  /* line 53, sass/styles.scss */
   .container button {
     background-color: #000745;
-    padding: 10px;
-    min-width: 200px;
+    padding: 5px 10px;
+    min-width: 150px;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
     border: none;
-    cursor: pointer; }
-  /* line 22, sass/styles.scss */
+    cursor: pointer;
+    margin-top: 5px; }
+  /* line 67, sass/styles.scss */
+  .container .index p {
+    margin-top: 5px; }
+  /* line 71, sass/styles.scss */
+  .container .index .content {
+    margin: 0;
+    padding: 0; }
+    /* line 75, sass/styles.scss */
+    .container .index .content .title {
+      clear: left;
+      color: #41545d;
+      margin-top: 5px;
+      padding-top: 1em;
+      font: 24px verdana;
+      font-family: impact;
+      margin-bottom: 15px;
+      text-decoration: none; }
+    /* line 86, sass/styles.scss */
+    .container .index .content .midwidth {
+      height: 1px; }
+    /* line 90, sass/styles.scss */
+    .container .index .content .clear {
+      clear: left; }
+    /* line 94, sass/styles.scss */
+    .container .index .content a {
+      text-decoration: none;
+      color: #2471A3; }
+    /* line 99, sass/styles.scss */
+    .container .index .content .news {
+      width: 135px;
+      background-color: #eee;
+      display: inline-block;
+      position: relative;
+      padding: 5px;
+      height: 300px; }
+      /* line 107, sass/styles.scss */
+      .container .index .content .news .news-title {
+        margin: 0;
+        vertical-align: top;
+        display: inline-block; }
+        /* line 112, sass/styles.scss */
+        .container .index .content .news .news-title .img {
+          height: 119px;
+          padding: 0;
+          margin-right: 5px;
+          display: inline-block; }
+        /* line 119, sass/styles.scss */
+        .container .index .content .news .news-title img {
+          float: left;
+          padding: 0px;
+          margin: 0 5px 15px 0; }
+        /* line 125, sass/styles.scss */
+        .container .index .content .news .news-title h3 {
+          font-size: 14px;
+          font-weight: bold;
+          color: #444;
+          display: inline; }
+      /* line 133, sass/styles.scss */
+      .container .index .content .news .img {
+        display: block;
+        width: 120px;
+        margin: 10px 0; }
+      /* line 140, sass/styles.scss */
+      .container .index .content .news .text {
+        vertical-align: top;
+        display: inline-block; }
+        /* line 144, sass/styles.scss */
+        .container .index .content .news .text p {
+          margin: 0; }
+    /* line 152, sass/styles.scss */
+    .container .index .content .red {
+      margin-top: 20px;
+      border-top: 1px solid #ccc; }
+      /* line 156, sass/styles.scss */
+      .container .index .content .red a {
+        display: block;
+        margin: 10px 0; }
+      /* line 161, sass/styles.scss */
+      .container .index .content .red h6 {
+        font-weight: bold;
+        margin: 20px 0;
+        font-size: 18px; }
+        /* line 166, sass/styles.scss */
+        .container .index .content .red h6 img {
+          margin: 0 10px; }
+  /* line 175, sass/styles.scss */
+  .container .index :root .content .news {
+    float: left;
+    width: 30%;
+    margin: 10px; }
+    /* line 180, sass/styles.scss */
+    .container .index :root .content .news .news-title {
+      float: left;
+      width: 128px;
+      display: inline; }
+  /* line 187, sass/styles.scss */
+  .container .index :root .content .img {
+    float: left;
+    width: 128px;
+    display: inline-block; }
+  /* line 193, sass/styles.scss */
+  .container .index :root .content .text {
+    float: left;
+    width: 128px;
+    display: inline; }
+  /* line 204, sass/styles.scss */
+  .container .entradas .term-condition {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Times New Roman', 'Times', serif;
+    list-style: none; }
+    /* line 211, sass/styles.scss */
+    .container .entradas .term-condition h3 {
+      font-size: 20px;
+      font-family: Times New Roman, Times, serif;
+      margin-bottom: 0px; }
+    /* line 217, sass/styles.scss */
+    .container .entradas .term-condition ul {
+      padding: 0 10px; }
+      /* line 220, sass/styles.scss */
+      .container .entradas .term-condition ul li {
+        margin-bottom: 10px;
+        list-style: none; }
+  /* line 227, sass/styles.scss */
+  .container .entradas .price {
+    font-size: 13px;
+    font-family: Times New Roman, Times, serif;
+    text-align: left; }
+    /* line 232, sass/styles.scss */
+    .container .entradas .price caption {
+      font-size: 18px;
+      text-align: left;
+      padding: 10px 0 5px; }
+    /* line 238, sass/styles.scss */
+    .container .entradas .price th {
+      font-size: 13px;
+      padding: 10px 5px; }
+    /* line 243, sass/styles.scss */
+    .container .entradas .price td {
+      font-size: 14px;
+      padding: 5px; }
+  /* line 252, sass/styles.scss */
   .container .noticias {
     min-height: 680px;
     margin: 0 auto; }
-    /* line 26, sass/styles.scss */
+    /* line 256, sass/styles.scss */
     .container .noticias img {
       width: 200px;
       display: block;
       margin: auto; }
-    /* line 32, sass/styles.scss */
+    /* line 262, sass/styles.scss */
     .container .noticias h1 {
       font-family: arial;
       font-size: 25px;
@@ -35,7 +216,7 @@ body {
       text-align: center;
       margin: 0 auto;
       padding: 50px 0 30px; }
-    /* line 41, sass/styles.scss */
+    /* line 271, sass/styles.scss */
     .container .noticias p {
       font-family: arial;
       font-size: 20px;
@@ -44,7 +225,7 @@ body {
       margin: 35px auto;
       background-color: white;
       padding: 20px; }
-    /* line 51, sass/styles.scss */
+    /* line 281, sass/styles.scss */
     .container .noticias button {
       display: block;
       margin: auto; }
