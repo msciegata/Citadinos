@@ -395,46 +395,45 @@
                     </form>
                     <hr>
                     <div>
-                      <div>
-                        <h2 style="padding-bottom:0px; margin-bottom:0px; width:300px; height:40px; overflow: hidden;" class=titulo>
-                        <font size="3">resultados de la encuesta anterior</font>
-                        </h2>
-                        <p><b aria-hidden="true">cuál es tu órgano favorito y cuál tu odiado?</b></p>
-                        <table summary="se muestran los dos parametros, lo amo o la odio, en las filas y en las columnas los distintos organos." width="560px" border="1" style="border: 1px dashed silver; text-align: left;" >
-                          <caption class="sr-only">cuál es tu órgano favorito y cuál tu odiado?</caption>
-                            <thead>
-                            <tr bgcolor="#dbdbdb">
-                                <th id="sin-dato" scope="col" width=70 class="aco-tab"></th>
-                                <th id="t-pul" width=70 class="aco-tab"><b>pulmón</b></th>
-                                <th id="t-pan" width=70 class="aco-tab"><b>páncreas</b></th>
-                                <th id="t-baz" width=70 class="aco-tab"><b>bazo</b></th>
-                                <th id="t-hig" width=70 class="aco-tab"><b>hígado</b></th>
-                                <th id="t-pie" width=70 class="aco-tab"><b>piel</b></th>
-                                <th id="t-cer" width=70 class="aco-tab"><b>cerebro</b></th>
-                              </tr>                              
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th id="amo" headers="sin-dato" scope="row" class="aco-tab">lo amo</th>
-                                <td headers="amo t-pul" class="aco-tab"></td>
-                                <td headers="amo t-pan" class="aco-tab">4</td>
-                                <td headers="amo t-baz" class="aco-tab">10</td>
-                                <td headers="amo t-hig" class="aco-tab">4</td>
-                                <td headers="amo t-pie" class="aco-tab"></td>
-                                <td headers="amo t-cer" class="aco-tab">1</td>
-                              </tr>
-                              <tr bgcolor="#dbdbdb">
-                                <th id="odio" headers="sin-dato" scope="row" class="aco-tab">lo odio</th>
-                                <td headers="odio t-pul" class="aco-tab">5</td>
-                                <td headers="odio t-pan" class="aco-tab">6</td>
-                                <td headers="odio t-baz" class="aco-tab"></td>
-                                <td headers="odio t-hig" class="aco-tab">14</td>
-                                <td headers="odio t-pie" class="aco-tab">1</td>
-                                <td headers="odio t-cer" class="aco-tab"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                      <div class="data-table">
+                              <h2 class="subtitle">
+                                Resultados de la encuesta anterior
+                              </h2>
+                              <table width="560px" border="1" class="poll-results">
+                                <caption>Cuál es tu órgano favorito y cuál tu odiado?</caption>
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th id="th-pul">PULMÓN</th>
+                                    <th id="th-pan">PÁNCREAS</th>
+                                    <th id="th-baz">BAZO</th>
+                                    <th id="th-hig">HÍGADO</th>
+                                    <th id="th-pie">PIEL</th>
+                                    <th id="th-cer">CEREBRO</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th id="Amo" headers="sin-dato" scope="row">Lo Amo</th>
+                                    <td headers="Amo th-pul">0 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-pan">4 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-baz">10 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-hig">4 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-pie">0 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-cer"><span aria-hidden="true">1</span> <span class="sr-only">Un voto</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th id="Odio" headers="sin-dato">Lo Odio</th>
+                                    <td headers="Odio th-pul">5 <span class="sr-only">votos</span></td>
+                                    <td headers="Odio th-pan">6 <span class="sr-only">votos</span></td>
+                                    <td headers="Odio th-baz">0 <span class="sr-only">votos</span></td>
+                                    <td headers="Odio th-hig">14 <span class="sr-only">votos</span></td>
+                                    <td headers="Odio th-pie"><span aria-hidden="true">1</span> <span class="sr-only">Un voto</span></td>
+                                    <td headers="Odio th-cer">0 <span class="sr-only">votos</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                       </div>
                       <p>&nbsp;</p>
                     </div>
