@@ -1,41 +1,38 @@
 <html lang="es">
 	<head charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Citadinos | Inicio</title>
+		<title>Inicio | Citadinos</title>
   		<link rel="stylesheet" href="css/styles.css">
-  	<head>
-    <script type="text/javascript">
-      function ChangeColor(id, colour){
-        document.getElementById(id).style.backgroundColor=colour;
-      }
-      function switchImage(imgName, imgSrc){
-        if (document.images){
-          if (imgSrc != "none"){
-            document.images[imgName].src = imgSrc;
-          }
-        }
-      }
-    </script>
-    <noscript>
-      <b>
-        <font color=red>esta página usa scripts!!!</font>
-      </b>
-    </noscript>
-
-
-  </head>
-  <body class='container'>
-  	<div class="index">
-	<table width=100% border=0px cellspacing=0px cellpadding=0px bgcolor=#d7d7cd>
-		<tr valign=middle>
-			<td width=100% align=center>
-				<table width=800px border=0px cellspacing=0px cellpadding=0px bgcolor=white>
-					<tr height=10px>
-						<td width=10px background=img/border_left_top.gif><img src=img/border_left_top.gif width=10px height=10px></td>
-						<td width=780px background=img/border_top.gif><img src=img/border_top.gif height=10px></td>
-						<td width=10px background=img/border_right_top.gif><img src=img/border_right_top.gif width=10px height=10px></td>
-					</tr>
-					<tr>
+	    <script type="text/javascript">
+	      function ChangeColor(id, colour){
+	        document.getElementById(id).style.backgroundColor=colour;
+	      }
+	      function switchImage(imgName, imgSrc){
+	        if (document.images){
+	          if (imgSrc != "none"){
+	            document.images[imgName].src = imgSrc;
+	          }
+	        }
+	      }
+	    </script>
+	    <noscript>
+	      <b>
+	        <font color=red>esta página usa scripts!!!</font>
+	      </b>
+	    </noscript>
+  	</head>
+  	<body class='container'>
+  		<div class="index">
+			<table width=100% border=0px cellspacing=0px cellpadding=0px bgcolor=#d7d7cd>
+				<tr valign=middle>
+					<td width=100% align=center>
+						<table width=800px border=0px cellspacing=0px cellpadding=0px bgcolor=white>
+						<tr height=10px>
+							<td width=10px background=img/border_left_top.gif><img src=img/border_left_top.gif width=10px height=10px></td>
+							<td width=780px background=img/border_top.gif><img src=img/border_top.gif height=10px></td>
+							<td width=10px background=img/border_right_top.gif><img src=img/border_right_top.gif width=10px height=10px></td>
+						</tr>
+					<tr>	
 						<td width=10px background=img/border_left.gif><img src=img/border_left.gif width=10px></td>
 						<td width=780px align=center>
 							<table width=780px height=144px border=0px cellspacing=0px cellpadding=0px bgcolor=white>
@@ -45,7 +42,7 @@
 									<td width=128px valign=middle>
 						                <img src=./img/top_weather.gif width=128px height=86px alt="">
 						                <p class="sr-only">Soleado con nubosidad variable</p>
-						              </td>
+						            </td>
 									<td width=22px valign=middle><img src=img/top_logo_next_start.gif width=22px height=86px></td>
 									<td width=163px background=./img/top_logo_next.gif align=center valign=middle>
 						                <label for="fast-access" class="sr-only">Acceso a servicios básicos de la ciudad</label>
@@ -115,11 +112,11 @@
 										<nav>
 											<ul class="nav-menu" width="155px" style="list-style-type: none; margin: 0px; padding: 0px; border-bottom: 1px dashed #797979; background-color: rgb(237, 237, 237);">
 												<li width=154px id="home" onmouseover="switchimage('nav_home', 'img/nav_home2.gif'); changecolor('home','#fff')" onmouseout="switchimage('nav_home', 'img/nav_home.gif'); changecolor('home','#ededed')"><a href="javascript:location.href='index.html';" style="outline: none;"><img alt="inicio" name="nav_home" src=img/nav_home.gif width=91 height=27 hspace="15" border=0px></a></li>
-												<li width=154px id="news" onmouseover="switchimage('nav_news', 'img/nav_news2.gif'); changecolor('news','#fff')" onmouseout="switchimage('nav_news', 'img/nav_news.gif'); changecolor('news','#ededed')"><a href="javascript:location.href='noticias.html';" style="outline: none;"><img src=img/nav_news.gif alt="noticias" name="nav_news" width=111 height=21 hspace="12" border=0px></a></li>
+												<li width=154px id="news" onmouseover="switchimage('nav_news', 'img/nav_news2.gif'); changecolor('news','#fff')" onmouseout="switchimage('nav_news', 'img/nav_news.gif'); changecolor('news','#ededed')"><a href="javascript:location.href='noticias.html';" style="outline: none;"><img src=img/nav_news.gif alt="noticias" name="nav_news" width=111 height=21 hspace="12" border=0px></<a href=""></a></li>
 												<li width=154px id="tickets" onmouseover="switchimage('nav_facts', 'img/nav_facts2.gif'); changecolor('tickets','#fff')" onmouseout="switchimage('nav_facts', 'img/nav_facts.gif'); changecolor('tickets','#ededed')"><a href="javascript:location.href='entradas.html';" style="outline: none;"><img alt="entradas" name="nav_facts" src=img/nav_facts.gif width=116 height=23 hspace="9" border=0px></a></li>
 												<li width=154px id="survey" onmouseover="switchimage('nav_survey', 'img/nav_survey2.gif'); changecolor('survey','#fff')" onmouseout="switchimage('nav_survey', 'img/nav_survey.gif'); changecolor('survey','#ededed')"><a href="javascript:location.href='encuesta.html';" style="outline: none;"><img src=img/nav_survey.gif name="nav_survey" alt="encuestas" width=122 height=32 hspace="8" border=0px></a></li>
 											</ul>
-										</vav>
+										</nav>
 									</td>
 									<td width=10px><img src=img/blank_5x5.gif width=10spx height=5px></td>
 									<td width=450px height="600px" valign=top class="index">

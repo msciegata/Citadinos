@@ -18,7 +18,7 @@ body {
 	li {
 		border-top: 1px dashed #797979;
 	    border-right: 1px dashed #797979;
-	    padding: 5px 0px 3px 0px;
+	    padding: 5px 0px;
 	}
 }
 
@@ -34,20 +34,28 @@ body {
 
 	.title {
 		margin:0px auto;
-		font-family:'verdana';
-		font-size:25px;
-		font-weight: bold;
+		font-family: 'Verdana';
+		font-family: impact;
+		font-size:22px;
 		text-decoration: none;
-		color:#17202A;
+		color:#41545d;
 	}
 
 	.subtitle {
 		text-decoration: none;
-		color:#17202A;
-		font-family: 'verdana';
-		font-size: 22px;
-		font-weight: bold;
+		color:#41545d;
+		font-family: 'Verdana';
+		font-family: impact;
+		letter-spacing: 1px;
+		font-size: 18px;
 		margin-bottom:0;
+	}
+
+	.epigraph {
+		font-size: 15px;
+		color:#222;
+		font-family:'Verdana';
+		font-weight: normal;
 	}
 
 	button {
@@ -60,6 +68,126 @@ body {
 		border:none;
 		cursor: pointer;
 		margin-top:5px;
+	}
+
+	.poll {
+		hr {
+			margin-right: 20px;
+		}
+
+		.table-border {
+        	border: 2px solid gray;
+        	margin-bottom: 15px;
+        	background: #eaeaea;
+        	padding:10px;
+
+        	h3 {
+        		margin:0 0 10px;
+        		padding:0;
+        	}
+		}
+
+		ul {
+			list-style: none;
+			padding:0;
+			margin:0;
+
+			li {
+				padding-bottom: 10px;
+			}
+		}
+
+		.info-user {
+			.gender {
+				display: block;
+				width: 100%;
+				margin-bottom: 20px;
+
+				label {
+					font-size: 14px;
+				}
+			}
+
+			.name,
+			.mail,
+			.r-mail {
+				display: block;
+				width: 100%;
+				margin-bottom: 15px;
+
+				label {
+					font-size: 14px;
+					display: block;
+					margin-bottom: 5px;
+				}
+			}				
+		}
+
+	}
+
+	.thanks {
+		.next-poll {
+			font-family: 'Verdana';
+			font-size:16px;
+			color:#41545d;
+			margin-top:10px;
+
+			a {
+				font-family: 'Verdana';
+				text-decoration: none;
+				font-weight: normal;
+			}
+		}
+
+		.msg {
+			font-size:16px;
+			font-weight: bold;
+			color:black;
+			text-align: center;
+			background-color:palegoldenrod;
+			padding:10px;
+			margin:20px 15px 0 0;
+			font-family: 'Helvetica';
+		}
+
+		.data-table {
+			text-align: center;
+			margin-top:30px;
+
+			.poll-results {
+				border:1px dashed silver;
+				text-align: left;
+				font-family: 'Verdana';
+				font-size: 14px;
+				text-align: center;
+
+				caption {
+					margin:10px 0 15px;
+					font-size:16px;
+					color:#41545d;
+				}
+
+				thead {
+					background-color: darkgray;
+					color:black;
+					font-weight: light;
+
+					th {
+						padding:5px;
+						text-transform: uppercase;
+					}
+				}
+
+				tbody {
+					th {
+						padding:5px;
+						text-transform: uppercase;
+					}
+
+				}
+
+			}
+		}
 	}
 
 	.index {

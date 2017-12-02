@@ -1,227 +1,196 @@
-<HTML lang="es">
-  <HEAD>
-<TITLE>Citadinos, tu acceso a la ciudad | Gracias</TITLE>
-<STYLE>
-      body { 
-        color: #000; 
-      }
-      #principal, p, td, form {
-        color: #000000;
-        font: normal 15px/15px "Times New Roman", Times, serif;
-        text-decoration: none;
-      }
-      #principal .titulo {
-        color: #41545d;
-        font: 24px verdana;
-        font-family: impact;
-        text-decoration: none;
-        margin-top: 0;
-      }
-      .comment {
-        margin-top: 1em;
-      }
-      .hundred {
-        font-size: 100%;
-      }
-      .bordetabla {
-        background: #ededed;
-        border: 2px solid gray;
-      }
-      .bordetablacapitolo {
-        background: #a9b8bf;
-      }
-
-      .nav-li {
-        border-top: 1px dashed #797979; 
-        border-right: 1px dashed #797979;
-        padding: 5px 0px 3px 0px;
-      }
-      
-      .sr-only {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        width: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-      }
-
-    </STYLE>
-
-    <META charset="utf-8">
-    <SCRIPT type="text/javascript">
+<html lang="es">
+  <head charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gracias por completar la encuesta | Citadinos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript">
       function ChangeColor(id, colour){
         document.getElementById(id).style.backgroundColor=colour;
       }
       function switchImage(imgName, imgSrc){
         if (document.images){
           if (imgSrc != "none"){
-              document.images[imgName].src = imgSrc;
+            document.images[imgName].src = imgSrc;
           }
         }
       }
-    </SCRIPT> 
-    <NOSCRIPT><B><FONT COLOR=RED>Esta página usa scripts!!!</FONT></B></NOSCRIPT>
-
-</HEAD>
-<BODY TEXT=#000000 BGCOLOR=#D7D7CD LEFTMARGIN=0px TOPMARGIN=0px MARGINWIDTH=0px MARGINHEIGHT=0px LINK=#226C8E VLINK=#226C8E ALINK=#226C8E>
-  <TABLE WIDTH=100% BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=#D7D7CD><TR VALIGN=MIDDLE><TD WIDTH=100% ALIGN=CENTER>
-    <TABLE WIDTH=800px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=WHITE>
-      <TR HEIGHT=10px>
-        <TD WIDTH=10px BACKGROUND=./img/border_left_top.gif><IMG SRC=./img/border_left_top.gif WIDTH=10px HEIGHT=10px></TD>
-        <TD WIDTH=780px BACKGROUND=./img/border_top.gif><IMG SRC=./img/border_top.gif HEIGHT=10px></TD>
-        <TD WIDTH=10px BACKGROUND=./img/border_right_top.gif><IMG SRC=./img/border_right_top.gif WIDTH=10px HEIGHT=10px></TD>
-      </TR>
-      <TR>
-        <TD WIDTH=10px BACKGROUND=./img/border_left.gif><IMG SRC=./img/border_left.gif WIDTH=10px></TD>
-        <TD WIDTH=780px ALIGN=CENTER>
-          <TABLE WIDTH=780px HEIGHT=144px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=WHITE>
-            <TR HEIGHT=86px>
-              <TD WIDTH=443px BACKGROUND=./img/top_logo_next.gif VALIGN=MIDDLE><DIV><A HREF=index.html><IMG BORDER=0 SRC=./img/top_logo.gif WIDTH=443px HEIGHT=86px ALT="Citadinos"></A></DIV></TD>
-              <TD WIDTH=24px VALIGN=MIDDLE><IMG SRC=./img/top_logo_next_end.gif WIDTH=24px HEIGHT=86px></TD>
-              <TD WIDTH=128px VALIGN=MIDDLE><IMG SRC=./img/top_weather.gif WIDTH=128px HEIGHT=86px></TD>
-              <TD WIDTH=22px VALIGN=MIDDLE><IMG SRC=./img/top_logo_next_start.gif WIDTH=22px HEIGHT=86px></TD>
-              <TD WIDTH=163px BACKGROUND=./img/top_logo_next.gif ALIGN=CENTER VALIGN=MIDDLE>
-                <label for="a-rapido" class="sr-only">Acceso rapido a servicios de la ciudad</label>
-                <SELECT id="a-rapido" ONCHANGE="">
-                  <OPTION value="1" aria-hidden="true">Acceso rápido</OPTION>
-                  <OPTION value="2">Agua potable</OPTION>
-                  <OPTION value="3">Arquitectura</OPTION>
-                  <OPTION value="4">Asistencia social</OPTION>
-                  <OPTION value="5">Atención médica</OPTION>
-                  <OPTION value="6">Bibliotecas</OPTION>
-                  <OPTION value="7">Bomberos</OPTION>
-                  <OPTION value="8">Educación</OPTION>
-                  <OPTION value="9">Electricidad</OPTION>
-                  <OPTION value="10">Guarderías</OPTION>
-                  <OPTION value="11">Policía</OPTION>
-                  <OPTION value="12">Residuos</OPTION>
-                  <OPTION value="13">Servicio de gas</OPTION>
-                  <OPTION value="14">Telecomunicaciones</OPTION>
-                  <OPTION value="15">Televisión</OPTION>
-                  <OPTION value="16">Transportes</OPTION>
-                </SELECT>
-                <button type="button">Ir</button>
-              </TD>
-            </TR>
-            <TR HEIGHT=7px>
-              <TD WIDTH=780px BACKGROUND=./img/mark.gif COLSPAN=5><IMG SRC=./img/mark.gif WIDTH=158px HEIGHT=7px></TD>
-            </TR>
-            <TR HEIGHT=25px>
-              <TD COLSPAN=5>
-                <TABLE WIDTH=780px BORDER=0px CELLSPACING=0px CELLPADDING=0px>
-                  <TR HEIGHT=25px>
-                    <TD BGCOLOR="#EDEDED" WIDTH=380px><FONT COLOR=BLACK FACE=Verdana SIZE=2>&nbsp;&nbsp;<B>Tránsito:</B> Obras en la Avenida Central</FONT></TD>
-                    <TD BGCOLOR="#FFFFFF" ALIGN=RIGHT ID="WEATHER"><FONT COLOR=BLACK FACE=Verdana SIZE=2><B>Hoy:</B>
-                      <SCRIPT LANGUAGE="JavaScript">
-                      var now = new Date();
-                      var days = new Array('Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado');
-                      var months = new Array('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
-                      var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-                      function fourdigits(number) {
-                      return (number < 1000) ? number + 1900 : number;
-                      }
-                      today =  days[now.getDay()] + " " + date + " " + months[now.getMonth()] + " " + (fourdigits(now.getYear())) + ", Soleado, 23&deg;C&nbsp;&nbsp;</FONT>";
-                      document.all.WEATHER.setAttribute("BGCOLOR", "#EDEDED", 0);
-                      document.write(today);
-                    </SCRIPT></TD>
-                  </TR>
-                </TABLE>
-              </TD>
-            </TR>
-            <TR HEIGHT=1px>
-              <TD WIDTH=780px BACKGROUND=./img/marker2_w.gif COLSPAN=5><IMG SRC=.img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
-            </TR>
-            <TR HEIGHT=25px>
-              <TD COLSPAN=5>&nbsp;</TD>
-            </TR>
-          </TABLE>
-          <TABLE WIDTH=780px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=WHITE>
-            <TR WIDTH=780px>
-              <TD WIDTH=155px BGCOLOR=#E4E4E4 VALIGN=TOP>
-                <nav>
-                  <ul width="155px" style="list-style-type: none; margin: 0px; padding: 0px; border-bottom: 1px dashed #797979; background-color: rgb(237, 237, 237);">
-                    <li WIDTH=154px class="nav-li" id="home" onMouseOver="switchImage('nav_home', './img/nav_home2.gif'); ChangeColor('home','#FFF')" onMouseOut="switchImage('nav_home', './img/nav_home.gif'); ChangeColor('home','#EDEDED')"><A HREF="javascript:location.href='index.html';" style="outline: none;"><img alt="Inicio" name="nav_home" src=./img/nav_home.gif width=91 height=27 hspace="15" border=0px></a></li>
-                    <li WIDTH=154px class="nav-li" id="news" onMouseOver="switchImage('nav_news', './img/nav_news2.gif'); ChangeColor('news','#FFF')" onMouseOut="switchImage('nav_news', './img/nav_news.gif'); ChangeColor('news','#EDEDED')"><A HREF="javascript:location.href='noticias.html';" style="outline: none;"><IMG SRC=./img/nav_news.gif alt="Noticias" name="nav_news" WIDTH=111 HEIGHT=21 hspace="12" BORDER=0px></A></li>
-                    <li WIDTH=154px class="nav-li" id="tickets" onMouseOver="switchImage('nav_facts', './img/nav_facts2.gif'); ChangeColor('tickets','#FFF')" onMouseOut="switchImage('nav_facts', './img/nav_facts.gif'); ChangeColor('tickets','#EDEDED')"><A HREF="javascript:location.href='entradas.html';" style="outline: none;"><IMG alt="Entradas" name="nav_facts" SRC=./img/nav_facts.gif WIDTH=116 HEIGHT=23 hspace="9" BORDER=0px></A></li>
-                    <li WIDTH=154px class="nav-li" id="survey" onMouseOver="switchImage('nav_survey', './img/nav_survey2.gif'); ChangeColor('survey','#FFF')" onMouseOut="switchImage('nav_survey', './img/nav_survey.gif'); ChangeColor('survey','#EDEDED')"><A HREF="javascript:location.href='encuesta.html';" style="outline: none;"><IMG SRC=./img/nav_survey.gif name="nav_survey" alt="Encuestas" WIDTH=122 HEIGHT=32 hspace="8" BORDER=0px></A></li>
-                  </ul>
-                  </vav>
-                </TD>
-                <TD WIDTH=20px><IMG SRC=./img/blank_5x5.gif WIDTH=20px HEIGHT=5px></TD>
-                <TD WIDTH=625px HEIGHT="600px" VALIGN=TOP id="principal">
-                  <main>
-                    <DIV>
-                      <h1 class="titulo">Encuesta Citadinos</h1>
-                      <h2 class="titulo"><font size="4">Encuesta de la Semana: más parques en la ciudad, ganamos o perdemos?</font></h2>
-                      <p>Gracias por completar la encuesta!</p>
-                      <div style="clear:both;width:100%;padding:0px;margin:0px;">
-                        <div id="data"style="float:left">
-                          <h2 style="padding-bottom:0px; margin-bottom:0px; width:300px; height:40px; overflow: hidden;" class=titulo>
-                          <font size="3">Resultados de la encuesta anterior</font>
+    </script>
+    <noscript>
+      <b>
+        <font color=red>esta página usa scripts!!!</font>
+      </b>
+    </noscript>
+  </head>
+  <body text=#000000 bgcolor=#d7d7cd leftmargin=0px topmargin=0px marginwidth=0px marginheight=0px link=#226c8e vlink=#226c8e alink=#226c8e class="container">
+    <table width=100% border=0px cellspacing=0px cellpadding=0px bgcolor=#d7d7cd><tr valign=middle><td width=100% align=center>
+      <table width=800px border=0px cellspacing=0px cellpadding=0px bgcolor=white>
+        <tr height=10px>
+          <td width=10px background=./img/border_left_top.gif><img src=./img/border_left_top.gif width=10px height=10px></td>
+          <td width=780px background=./img/border_top.gif><img src=./img/border_top.gif height=10px></td>
+          <td width=10px background=./img/border_right_top.gif><img src=./img/border_right_top.gif width=10px height=10px></td>
+        </tr>
+        <tr>
+          <td width=10px background=./img/border_left.gif><img src=./img/border_left.gif width=10px></td>
+          <td width=780px align=center>
+            <table width=780px height=144px border=0px cellspacing=0px cellpadding=0px bgcolor=white>
+              <tr height=86px>
+                <td width=443px background=./img/top_logo_next.gif valign=middle><div><a href=index.html><img border=0 src=./img/top_logo.gif width=443px height=86px alt="Citadinos | Tu acceso a la ciudad."></a></div></td>
+                <td width=24px valign=middle><img src=./img/top_logo_next_end.gif width=24px height=86px></td>
+                <td width=128px valign=middle>
+                  <img src=./img/top_weather.gif width=128px height=86px alt="">
+                  <p class="sr-only">Soleado con nubosidad variable</p>
+                </td>
+                <td width=22px valign=middle><img src=./img/top_logo_next_start.gif width=22px height=86px></td>
+                <td width=163px background=./img/top_logo_next.gif align=center valign=middle>
+                  <label for="fast-access" class="sr-only">Acceso a servicios básicos de la ciudad</label>
+                  <select id="fast-access" onChange="">
+                    <option value="1" aria-hidden="true">Servicios básicos</option>
+                    <option value="2">Agua potable</option>
+                    <option value="3">Arquitectura</option>
+                    <option value="4">Asistencia social</option>
+                    <option value="5">Atención médica</option>
+                    <option value="6">Bibliotecas</option>
+                    <option value="7">Bomberos</option>
+                    <option value="8">Educación</option>
+                    <option value="9">Electricidad</option>
+                    <option value="10">Guarderías</option>
+                    <option value="11">Policía</option>
+                    <option value="12">Residuos</option>
+                    <option value="13">Servicio de Gas</option>
+                    <option value="14">Telecomunicaciones</option>
+                    <option value="15">Televisión</option>
+                    <option value="16">Transportes</option>
+                  </select>
+                <button type="button">Entrar</button>
+                </td>
+                </tr>
+                <tr height=7px>
+                  <td width=780px background=./img/mark.gif colspan=5>
+                    <img src=./img/mark.gif width=158px height=7px>
+                  </td>
+                </tr>
+                <tr height=25px>
+                  <td colspan=5>
+                    <table width=780px border=0px cellspacing=0px cellpadding=0px>
+                      <tr height=25px>
+                        <td bgcolor="#ededed" width=380px>
+                          <font color=black face=verdana size=2>&nbsp;&nbsp;
+                            <b>Tránsito:</b> Obras en la Avenida Central
+                          </font>
+                        </td>
+                        <td bgcolor="#ffffff" align=right id="weather">
+                          <font color=black face=verdana size=2><b>Hoy:</b>
+                            <script language="JavaScript">
+                              var now = new Date();
+                              var days = new Array('Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado');
+                              var months = new Array('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+                              var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                              function fourdigits(number) {
+                              return (number < 1000) ? number + 1900 : number;
+                              }
+                              today =  days[now.getDay()] + " " + date + " " + months[now.getMonth()] + " " + (fourdigits(now.getYear())) + ", Soleado, 23&deg;C&nbsp;&nbsp;</FONT>";
+                              document.all.weather.setAttribute("BGCOLOR", "#EDEDED", 0);
+                              document.write(today);
+                            </script>
+                          </font>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr height=1px>
+                  <td width=780px background=./img/marker2_w.gif colspan=5><img src=.img/marker2_w.gif width=78px height=1px></td>
+                </tr>
+                <tr height=25px>
+                  <td colspan=5>&nbsp;</td>
+                </tr>
+                </table>
+                <table width=780px border=0px cellspacing=0px cellpadding=0px bgcolor=white>
+                  <tr width=780px>
+                    <td width=155px bgcolor=#e4e4e4 valign=top>
+                      <nav>
+                      <ul class="nav-menu" width="155px" style="list-style-type: none; margin: 0px; padding: 0px; border-bottom: 1px dashed #797979; background-color: rgb(237, 237, 237);">
+                        <li width=154px id="home" onmouseover="switchimage('nav_home', 'img/nav_home2.gif'); changecolor('home','#fff')" onmouseout="switchimage('nav_home', 'img/nav_home.gif'); changecolor('home','#ededed')"><a href="javascript:location.href='index.html';" style="outline: none;"><img alt="inicio" name="nav_home" src=img/nav_home.gif width=91 height=27 hspace="15" border=0px></a></li>
+                        <li width=154px id="news" onmouseover="switchimage('nav_news', 'img/nav_news2.gif'); changecolor('news','#fff')" onmouseout="switchimage('nav_news', 'img/nav_news.gif'); changecolor('news','#ededed')"><a href="javascript:location.href='noticias.html';" style="outline: none;"><img src=img/nav_news.gif alt="noticias" name="nav_news" width=111 height=21 hspace="12" border=0px></<a href=""></a></li>
+                        <li width=154px id="tickets" onmouseover="switchimage('nav_facts', 'img/nav_facts2.gif'); changecolor('tickets','#fff')" onmouseout="switchimage('nav_facts', 'img/nav_facts.gif'); changecolor('tickets','#ededed')"><a href="javascript:location.href='entradas.html';" style="outline: none;"><img alt="entradas" name="nav_facts" src=img/nav_facts.gif width=116 height=23 hspace="9" border=0px></a></li>
+                        <li width=154px id="survey" onmouseover="switchimage('nav_survey', 'img/nav_survey2.gif'); changecolor('survey','#fff')" onmouseout="switchimage('nav_survey', 'img/nav_survey.gif'); changecolor('survey','#ededed')"><a href="javascript:location.href='encuesta.html';" style="outline: none;"><img src=img/nav_survey.gif name="nav_survey" alt="encuestas" width=122 height=32 hspace="8" border=0px></a></li>
+                      </ul>
+                    </nav>
+                    </td>       
+                    <td width=20px><img src=./img/blank_5x5.gif width=20px height=5px></td>
+                    <td class="thanks"width=625px height="600px" valign=top>
+                      <main>
+                        <div>
+                          <h1 class="title">Encuesta Citadinos</h1>
+                          <p class="msg">Gracias por completar la encuesta!</p>
+                          <br>
+                          <h3 class="next-poll">Encuesta de la semana:<br>
+                            <a href="#">Más parques en la ciudad, ganamos o perdemos?</a>
                           </h2>
-                          <table summary="Se muestran dos parametros (lo amo o lo odio) en las filas y en órganos en las columnas" width="560px" border="1" style="border: 1px dashed silver; text-align: left;" >
-                            <caption>Cuál es tu órgano favorito y cuál tu odiado?</caption>
-                            <thead>
-                              <tr bgcolor="#DBDBDB">
-                                <th id="sin-dato" scope="col" width=70 class="aco-tab"></th>
-                                <th id="t-pul" width=70 class="aco-tab"><b>Pulmón</b></th>
-                                <th id="t-pan" width=70 class="aco-tab"><b>Páncreas</b></th>
-                                <th id="t-baz" width=70 class="aco-tab"><b>Bazo</b></th>
-                                <th id="t-hig" width=70 class="aco-tab"><b>Hígado</b></th>
-                                <th id="t-pie" width=70 class="aco-tab"><b>Piel</b></th>
-                                <th id="t-cer" width=70 class="aco-tab"><b>Cerebro</b></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th id="amo" headers="sin-dato" scope="row" class="aco-tab">lo amo</th>
-                                <td headers="amo t-pul" class="aco-tab"></td>
-                                <td headers="amo t-pan" class="aco-tab">4</td>
-                                <td headers="amo t-baz" class="aco-tab">10</td>
-                                <td headers="amo t-hig" class="aco-tab">4</td>
-                                <td headers="amo t-pie" class="aco-tab"></td>
-                                <td headers="amo t-cer" class="aco-tab">1</td>
-                              </tr>
-                              <tr bgcolor="#DBDBDB">
-                                <th id="odio" headers="sin-dato" scope="row" class="aco-tab">lo odio</th>
-                                <td headers="odio t-pul" class="aco-tab">5</td>
-                                <td headers="odio t-pan" class="aco-tab">6</td>
-                                <td headers="odio t-baz" class="aco-tab"></td>
-                                <td headers="odio t-hig" class="aco-tab">14</td>
-                                <td headers="odio t-pie" class="aco-tab">1</td>
-                                <td headers="odio t-cer" class="aco-tab"></td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div>
+                            <div class="data-table">
+                              <h2 class="subtitle">
+                                Resultados de la encuesta anterior
+                              </h2>
+                              <table width="560px" border="1" class="poll-results">
+                                <caption>Cuál es tu órgano favorito y cuál tu odiado?</caption>
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th id="th-pul">PULMÓN</th>
+                                    <th id="th-pan">PÁNCREAS</th>
+                                    <th id="th-baz">BAZO</th>
+                                    <th id="th-hig">HÍGADO</th>
+                                    <th id="th-pie">PIEL</th>
+                                    <th id="th-cer">CEREBRO</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th id="Amo" headers="sin-dato" scope="row">Lo Amo</th>
+                                    <td headers="Amo th-pul">0 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-pan">4 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-baz">10 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-hig">4 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-pie">0 <span class="sr-only">votos</span></td>
+                                    <td headers="Amo th-cer"><span aria-hidden="true">1</span> <span class="sr-only">Un voto</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th id="Odio" headers="sin-dato">Lo Odio</th>
+                                    <td headers="Odio th-pul">5 <span class="sr-only">votos</span></td>
+                                    <td headers="Odio th-pan">6 <span class="sr-only">votos</span></td>
+                                    <td headers="Odio th-baz">0 <span class="sr-only">votos</span></td>
+                                    <td headers="Odio th-hig">14 <span class="sr-only">votos</span></td>
+                                    <td headers="Odio th-pie"><span aria-hidden="true">1</span> <span class="sr-only">Un voto</span></td>
+                                    <td headers="Odio th-cer">0 <span class="sr-only">votos</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <p>&nbsp;</p>
-                    </DIV>
-                  </main>
-                </TD>
-              </TR>
-            </TABLE>
-            <FOOTER>
-              <TABLE WIDTH=780px HEIGHT=17px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=#EDEDED>
-                <TR HEIGHT=17px>
-                  <TD ALIGN=RIGHT><FONT COLOR=BLACK FACE=Verdana SIZE=1><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Derechos reservados</a> &copy; 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a>&reg;</FONT></TD>
-                </TR>
-              </TABLE>
-            </FOOTER>
-            <TD WIDTH=10px BACKGROUND=./img/border_right.gif><IMG SRC=./img/border_right.gif WIDTH=10px></TD>
-          </TR>
-          <TR HEIGHT=10px>
-            <TD WIDTH=10px HEIGHT=10px BACKGROUND=./img/border_bottom_left.gif><IMG SRC=./img/border_bottom_left.gif WIDTH=10px HEIGHT=10px></TD>
-            <TD WIDTH=780px HEIGHT=10px BACKGROUND=./img/border_bottom.gif><IMG SRC=./img/border_bottom.gif HEIGHT=10px></TD>
-            <TD WIDTH=10px HEIGHT=10px BACKGROUND=./img/border_bottom_right.gif><IMG SRC=./img/border_bottom_right.gif WIDTH=10px HEIGHT=10px></TD>
-          </TR>
-        </TABLE>
-      </TD>
-    </TR>
-  </TR>
-</TABLE>
-</body>
+                      </main>
+                    </td>
+                  </tr>
+                </table>
+                <footer>
+                  <table width=780px height=17px border=0px cellspacing=0px cellpadding=0px bgcolor=#ededed>
+                    <tr height=17px>
+                      <td align=right><font color=black face=verdana size=1><a rel="copyright" href="http://www.w3.org/consortium/legal/ipr-notice#copyright">derechos reservados</a> &copy; 2012 <a href="http://www.w3.org/"><acronym title="world wide web consortium">w3c</acronym></a>&reg;</font></td>
+                    </tr>
+                  </table>
+                </footer>
+                <td width=10px background=./img/border_right.gif><img src=./img/border_right.gif width=10px></td>
+              </tr>
+              <tr height=10px>
+                <td width=10px height=10px background=./img/border_bottom_left.gif><img src=./img/border_bottom_left.gif width=10px height=10px></td>
+                <td width=780px height=10px background=./img/border_bottom.gif><img src=./img/border_bottom.gif height=10px></td>
+                <td width=10px height=10px background=./img/border_bottom_right.gif><img src=./img/border_bottom_right.gif width=10px height=10px></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </body>
 </html>

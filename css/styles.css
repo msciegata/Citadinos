@@ -18,7 +18,7 @@ body {
 .nav-menu li {
   border-top: 1px dashed #797979;
   border-right: 1px dashed #797979;
-  padding: 5px 0px 3px 0px; }
+  padding: 5px 0px; }
 
 /* line 25, sass/styles.scss */
 .container {
@@ -33,20 +33,27 @@ body {
   /* line 35, sass/styles.scss */
   .container .title {
     margin: 0px auto;
-    font-family: 'verdana';
-    font-size: 25px;
-    font-weight: bold;
+    font-family: 'Verdana';
+    font-family: impact;
+    font-size: 22px;
     text-decoration: none;
-    color: #17202A; }
+    color: #41545d; }
   /* line 44, sass/styles.scss */
   .container .subtitle {
     text-decoration: none;
-    color: #17202A;
-    font-family: 'verdana';
-    font-size: 22px;
-    font-weight: bold;
+    color: #41545d;
+    font-family: 'Verdana';
+    font-family: impact;
+    letter-spacing: 1px;
+    font-size: 18px;
     margin-bottom: 0; }
-  /* line 53, sass/styles.scss */
+  /* line 54, sass/styles.scss */
+  .container .epigraph {
+    font-size: 15px;
+    color: #222;
+    font-family: 'Verdana';
+    font-weight: normal; }
+  /* line 61, sass/styles.scss */
   .container button {
     background-color: #000745;
     padding: 5px 10px;
@@ -57,14 +64,107 @@ body {
     border: none;
     cursor: pointer;
     margin-top: 5px; }
-  /* line 67, sass/styles.scss */
+  /* line 74, sass/styles.scss */
+  .container .poll hr {
+    margin-right: 20px; }
+  /* line 78, sass/styles.scss */
+  .container .poll .table-border {
+    border: 2px solid gray;
+    margin-bottom: 15px;
+    background: #eaeaea;
+    padding: 10px; }
+    /* line 84, sass/styles.scss */
+    .container .poll .table-border h3 {
+      margin: 0 0 10px;
+      padding: 0; }
+  /* line 90, sass/styles.scss */
+  .container .poll ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    /* line 95, sass/styles.scss */
+    .container .poll ul li {
+      padding-bottom: 10px; }
+  /* line 101, sass/styles.scss */
+  .container .poll .info-user .gender {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; }
+    /* line 106, sass/styles.scss */
+    .container .poll .info-user .gender label {
+      font-size: 14px; }
+  /* line 111, sass/styles.scss */
+  .container .poll .info-user .name,
+  .container .poll .info-user .mail,
+  .container .poll .info-user .r-mail {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; }
+    /* line 118, sass/styles.scss */
+    .container .poll .info-user .name label,
+    .container .poll .info-user .mail label,
+    .container .poll .info-user .r-mail label {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 5px; }
+  /* line 129, sass/styles.scss */
+  .container .thanks .next-poll {
+    font-family: 'Verdana';
+    font-size: 16px;
+    color: #41545d;
+    margin-top: 10px; }
+    /* line 135, sass/styles.scss */
+    .container .thanks .next-poll a {
+      font-family: 'Verdana';
+      text-decoration: none;
+      font-weight: normal; }
+  /* line 142, sass/styles.scss */
+  .container .thanks .msg {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    background-color: palegoldenrod;
+    padding: 10px;
+    margin: 20px 15px 0 0;
+    font-family: 'Helvetica'; }
+  /* line 153, sass/styles.scss */
+  .container .thanks .data-table {
+    text-align: center;
+    margin-top: 30px; }
+    /* line 157, sass/styles.scss */
+    .container .thanks .data-table .poll-results {
+      border: 1px dashed silver;
+      text-align: left;
+      font-family: 'Verdana';
+      font-size: 14px;
+      text-align: center; }
+      /* line 164, sass/styles.scss */
+      .container .thanks .data-table .poll-results caption {
+        margin: 10px 0 15px;
+        font-size: 16px;
+        color: #41545d; }
+      /* line 170, sass/styles.scss */
+      .container .thanks .data-table .poll-results thead {
+        background-color: darkgray;
+        color: black;
+        font-weight: light; }
+        /* line 175, sass/styles.scss */
+        .container .thanks .data-table .poll-results thead th {
+          padding: 5px;
+          text-transform: uppercase; }
+      /* line 182, sass/styles.scss */
+      .container .thanks .data-table .poll-results tbody th {
+        padding: 5px;
+        text-transform: uppercase; }
+  /* line 195, sass/styles.scss */
   .container .index p {
     margin-top: 5px; }
-  /* line 71, sass/styles.scss */
+  /* line 199, sass/styles.scss */
   .container .index .content {
     margin: 0;
     padding: 0; }
-    /* line 75, sass/styles.scss */
+    /* line 203, sass/styles.scss */
     .container .index .content .title {
       clear: left;
       color: #41545d;
@@ -74,17 +174,17 @@ body {
       font-family: impact;
       margin-bottom: 15px;
       text-decoration: none; }
-    /* line 86, sass/styles.scss */
+    /* line 214, sass/styles.scss */
     .container .index .content .midwidth {
       height: 1px; }
-    /* line 90, sass/styles.scss */
+    /* line 218, sass/styles.scss */
     .container .index .content .clear {
       clear: left; }
-    /* line 94, sass/styles.scss */
+    /* line 222, sass/styles.scss */
     .container .index .content a {
       text-decoration: none;
       color: #2471A3; }
-    /* line 99, sass/styles.scss */
+    /* line 227, sass/styles.scss */
     .container .index .content .news {
       width: 135px;
       background-color: #eee;
@@ -92,123 +192,123 @@ body {
       position: relative;
       padding: 5px;
       height: 300px; }
-      /* line 107, sass/styles.scss */
+      /* line 235, sass/styles.scss */
       .container .index .content .news .news-title {
         margin: 0;
         vertical-align: top;
         display: inline-block; }
-        /* line 112, sass/styles.scss */
+        /* line 240, sass/styles.scss */
         .container .index .content .news .news-title .img {
           height: 119px;
           padding: 0;
           margin-right: 5px;
           display: inline-block; }
-        /* line 119, sass/styles.scss */
+        /* line 247, sass/styles.scss */
         .container .index .content .news .news-title img {
           float: left;
           padding: 0px;
           margin: 0 5px 15px 0; }
-        /* line 125, sass/styles.scss */
+        /* line 253, sass/styles.scss */
         .container .index .content .news .news-title h3 {
           font-size: 14px;
           font-weight: bold;
           color: #444;
           display: inline; }
-      /* line 133, sass/styles.scss */
+      /* line 261, sass/styles.scss */
       .container .index .content .news .img {
         display: block;
         width: 120px;
         margin: 10px 0; }
-      /* line 140, sass/styles.scss */
+      /* line 268, sass/styles.scss */
       .container .index .content .news .text {
         vertical-align: top;
         display: inline-block; }
-        /* line 144, sass/styles.scss */
+        /* line 272, sass/styles.scss */
         .container .index .content .news .text p {
           margin: 0; }
-    /* line 152, sass/styles.scss */
+    /* line 280, sass/styles.scss */
     .container .index .content .red {
       margin-top: 20px;
       border-top: 1px solid #ccc; }
-      /* line 156, sass/styles.scss */
+      /* line 284, sass/styles.scss */
       .container .index .content .red a {
         display: block;
         margin: 10px 0; }
-      /* line 161, sass/styles.scss */
+      /* line 289, sass/styles.scss */
       .container .index .content .red h6 {
         font-weight: bold;
         margin: 20px 0;
         font-size: 18px; }
-        /* line 166, sass/styles.scss */
+        /* line 294, sass/styles.scss */
         .container .index .content .red h6 img {
           margin: 0 10px; }
-  /* line 175, sass/styles.scss */
+  /* line 303, sass/styles.scss */
   .container .index :root .content .news {
     float: left;
     width: 30%;
     margin: 10px; }
-    /* line 180, sass/styles.scss */
+    /* line 308, sass/styles.scss */
     .container .index :root .content .news .news-title {
       float: left;
       width: 128px;
       display: inline; }
-  /* line 187, sass/styles.scss */
+  /* line 315, sass/styles.scss */
   .container .index :root .content .img {
     float: left;
     width: 128px;
     display: inline-block; }
-  /* line 193, sass/styles.scss */
+  /* line 321, sass/styles.scss */
   .container .index :root .content .text {
     float: left;
     width: 128px;
     display: inline; }
-  /* line 204, sass/styles.scss */
+  /* line 332, sass/styles.scss */
   .container .entradas .term-condition {
     margin: 0;
     padding: 0;
     font-size: 14px;
     font-family: 'Times New Roman', 'Times', serif;
     list-style: none; }
-    /* line 211, sass/styles.scss */
+    /* line 339, sass/styles.scss */
     .container .entradas .term-condition h3 {
       font-size: 20px;
       font-family: Times New Roman, Times, serif;
       margin-bottom: 0px; }
-    /* line 217, sass/styles.scss */
+    /* line 345, sass/styles.scss */
     .container .entradas .term-condition ul {
       padding: 0 10px; }
-      /* line 220, sass/styles.scss */
+      /* line 348, sass/styles.scss */
       .container .entradas .term-condition ul li {
         margin-bottom: 10px;
         list-style: none; }
-  /* line 227, sass/styles.scss */
+  /* line 355, sass/styles.scss */
   .container .entradas .price {
     font-size: 13px;
     font-family: Times New Roman, Times, serif;
     text-align: left; }
-    /* line 232, sass/styles.scss */
+    /* line 360, sass/styles.scss */
     .container .entradas .price caption {
       font-size: 18px;
       text-align: left;
       padding: 10px 0 5px; }
-    /* line 238, sass/styles.scss */
+    /* line 366, sass/styles.scss */
     .container .entradas .price th {
       font-size: 13px;
       padding: 10px 5px; }
-    /* line 243, sass/styles.scss */
+    /* line 371, sass/styles.scss */
     .container .entradas .price td {
       font-size: 14px;
       padding: 5px; }
-  /* line 252, sass/styles.scss */
+  /* line 380, sass/styles.scss */
   .container .noticias {
     min-height: 680px;
     margin: 0 auto; }
-    /* line 256, sass/styles.scss */
+    /* line 384, sass/styles.scss */
     .container .noticias img {
       width: 200px;
       display: block;
       margin: auto; }
-    /* line 262, sass/styles.scss */
+    /* line 390, sass/styles.scss */
     .container .noticias h1 {
       font-family: arial;
       font-size: 25px;
@@ -216,7 +316,7 @@ body {
       text-align: center;
       margin: 0 auto;
       padding: 50px 0 30px; }
-    /* line 271, sass/styles.scss */
+    /* line 399, sass/styles.scss */
     .container .noticias p {
       font-family: arial;
       font-size: 20px;
@@ -225,7 +325,7 @@ body {
       margin: 35px auto;
       background-color: white;
       padding: 20px; }
-    /* line 281, sass/styles.scss */
+    /* line 409, sass/styles.scss */
     .container .noticias button {
       display: block;
       margin: auto; }
